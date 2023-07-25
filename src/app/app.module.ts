@@ -10,6 +10,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';// this is for to invoke the forms
+import { HttpClientModule } from '@angular/common/http';// this is for to invoke the client request, means that to switch from one page to another
+
 
 
 @NgModule({
@@ -26,6 +31,10 @@ import { HomeComponent } from './pages/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    MatInputModule,
+    MatFormFieldModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
